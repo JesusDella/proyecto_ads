@@ -1,17 +1,35 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primario: #124567;
+    --color-fondo: #ecf0f1; 
+    --color-texto: #333; 
+    --color-borde: #000; 
+}
+
+
 header {
     display: flex;
-    justify-content: space-around;
-    margin: 20px;
-    border: 1px solid #000;
-    padding: 1em;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em; 
+    background-color: var(--color-primario);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 15px 15px; 
 }
 
 header img {
-    border: 1px solid #000; 
-    width: 8em;
-    height: 5em;
-    margin-top: 1em;
+    border: 1px solid var(--color-borde);
+    width: 7em; 
+    height: 4em; 
+    border-radius: 8px; 
 }
+
 
 .menu {
     display: flex;
@@ -19,124 +37,86 @@ header img {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-ul a{
-    display: inline-block;
-    padding: 1.5em; 
-    margin: .5em;
-    height: auto; 
-    text-decoration: none;
-    background-color: #f0f0f0;
-    color: #333; 
-    border: 1px solid #ccc; 
-    border-radius: 5px;
+ul li {
+    margin: 0 0.5em;
 }
 
 ul a {
     display: inline-block;
-    padding: 1.5em;
-    margin-bottom: 0;
+    padding: 0.5em 1em;
+    height: auto;
     text-decoration: none;
-    background-color: #f0f0f0;
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    color: #fff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 ul a:hover {
-    background-color: #ddd;
+    background-color: #2980b9;
+    color: #fff;
 }
 
-#boton-iniciar-sesion {
-    display: inline-block;
-    padding: 1em; 
-    margin-top: 1.5em;
-    height: 2em;  
-    text-decoration: none;
-    background-color: #f0f0f0;
-    color: #333; 
-    border: 1px solid #ccc; 
-    border-radius: 5px;
-}
-
-#boton-iniciar-sesion:hover {
-    background-color: #ddd;
-}
-
+#boton-iniciar-sesion,
 .boton {
     display: inline-block;
-    padding: 1.5em; 
-    margin-top: 1em;
-    margin-bottom: 2em;
+    padding: 0.8em 1.5em; 
+    margin-left: 1em;
+    height: auto;
     text-decoration: none;
-    background-color: #f0f0f0;
-    color: #333; 
-    border: 1px solid #ccc; 
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    border: 1px solid var(--color-borde);
+    border-radius: 8px; 
+    transition: background-color 0.3s ease;
 }
+
+#boton-iniciar-sesion:hover,
 .boton:hover {
     background-color: #ddd;
 }
-
-main{
-    border: 1px solid #000; 
-    padding: 1em;
-    height: 30em;
-}
-
-
 footer {
+    background-color: rgb(25, 22, 22);
+    color: whitesmoke;
+    padding: 20px;
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #f0f0f0; 
-    padding: 1em;
-    border-top: 1px solid #ccc; 
-    margin-top: 1em;
-    color: #333;
-    font-size: 1em;
+    align-items: flex-end; /* Alinea los elementos en la parte inferior */
+}
+
+.footer-info {
+    margin-bottom: 0; /* Elimina el espacio inferior en .footer-info */
+}
+
+.emergency-info {
+    text-align: right;
+}
+body {
+    margin-bottom: 80px; /* Ajusta el margen inferior del cuerpo para evitar que el pie de página se solape con el contenido */
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
 }
 
 
 
-@media screen and (max-width: 767px) {
-    header {
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center;
-    }
-    
-    .menu {
-        display: inline;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1.5em;    
-    }
 
-    .menu a {
-        width: 80%;
-        padding: 1em;
-    }
-    
-    header img {
-        width: 8em;
-        margin-bottom: 10px; 
-    }
 
-    header a{
-        padding: .5em;
-        margin: 5px; 
-        text-align: center;  
-    }
 
-    footer {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #000;
-        margin-top: 1em;
-    }
-}
+
+
+
+
+
 

@@ -1,13 +1,22 @@
 .vales {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 20px; 
 }
 
 .vales h3 {
-    border: 1px solid black;
+    border: 2px solid #ffffff; 
     padding: 1em;
-    width: 6em;
+    width: 80%; 
+    text-align: center; 
+    margin: 0 auto; 
 }
+
+.boton {
+    margin-top: 10px; 
+}
+
 
 .llenado {
     display: flex;

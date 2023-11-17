@@ -1,42 +1,131 @@
-.flex-container {
-    display: flex;
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
 }
 
-main{
-    border: 1px solid #000; 
-    padding: 1em;
-}
-
-main h1 {
+#inicio {
     text-align: center;
     margin-bottom: 1em;
-    color: #333;
+    color: #3e2d35;
 }
+
 
 .introduccion {
-    border: 1px solid #000; 
-    padding: 1em;
+    margin-top: 2em;
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
 }
 
-.reactivos {
-    display: block;
-    margin: 2rem;
+.introduccion p {
+    margin-bottom: 1em;
 }
 
-.reactivos h4{
-    margin-bottom: 2rem;
+.caracteristicas {
+    margin-top: 1em;
 }
+
+.caracteristicas h3 {
+    color: var(--color-primario);
+    margin-bottom: 0.5em;
+}
+
+.caracteristicas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.caracteristicas li {
+    margin-bottom: 0.5em;
+}
+
+.razones {
+    margin-top: 1em;
+}
+
+.razones h3 {
+    color: var(--color-primario);
+    margin-bottom: 0.5em;
+}
+
+.razones ul {
+    list-style: none;
+    padding: 0;
+}
+
+.razones li {
+    margin-bottom: 0.5em;
+}
+
+
 
 
 .informacion {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 1rem;
-    border: 1px solid #000; 
 }
 
-div img {
-    border: 1px solid #000; 
-    width: 6em;
-    margin: 1em;
+.reactivos,
+.equipos {
+    flex: 1;
+    margin: 0 1em;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #cfd8dc; 
 }
+
+.reactivos h2,
+.equipos h2 {
+    color: #3e2d35;
+    margin-bottom: 1rem;
+}
+
+.informacion img {
+    border: 1px solid #ddd;
+    max-width: 100%;
+    height: auto;
+    margin: 1em 0;
+    border-radius: 10px;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.imagenes img {
+    margin-bottom: 1em;
+}
+
+.reactivos,
+.equipos {
+    background-color: #cfd8dc; 
+    border: 1px solid #7582d0; 
+    padding: 1em;
+    margin-bottom: 1.5em;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo-text {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5em;
+    margin-left: 0.5em; 
+}
+
+#logo-text:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
