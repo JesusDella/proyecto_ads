@@ -1,0 +1,82 @@
+.vales {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.vales h3 {
+    border: 2px solid #ffffff; 
+    padding: 1em;
+    width: 80%; 
+    text-align: center; 
+    margin: 0 auto; 
+}
+
+.boton {
+    margin-top: 10px; 
+}
+
+
+.llenado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px black solid;
+    padding: 1em;
+    height: 5em;
+}
+
+.llenado input{
+    width: 15em;
+    height: 4em;
+}
+
+input[type="text"] {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    main {
+        text-align: center;
+        height: 35em;
+        padding: 2em;
+    }
+
+    .container {
+        margin-top: 4em;
+    }
+
+    .vales, .llenado {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .vales h4 {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .llenado {
+        flex-direction: column;
+    }
+
+    .llenado input {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boton {
+        margin-bottom: 1em;
+    }
+}

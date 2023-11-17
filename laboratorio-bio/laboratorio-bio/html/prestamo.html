@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestamo</title>
+    <link rel="stylesheet" href="/estilos/estilo_general.css">
+    <link rel="stylesheet" href="/estilos/estilo_prestamo.css">
+    <script src="/scripts/html2pdf.bundle.min.js"></script>
+    <script src="/scripts/script.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <img src="/images/logo_lab.jpg" alt="Imagen de un equipo">
+
+        <nav>
+            <ul class="menu">
+                <li><a href="/html/index.html">Inicio</a></li>
+                <li><a href="/html/nuevo_vale.html">Vales</a></li>
+                <li><a href="/html/reportar.html">Reportar error</a></li>
+            </ul>
+        </nav>
+        
+        <a href="url_de_tu_pagina_de_inicio_de_sesion" id="boton-iniciar-sesion">Iniciar sesión</a>
+    </header>
+
+    <main class="contenido">
+        <section class="reactivos">
+            <table>
+                <caption><b>Reactivos</b>
+                    <tr>
+                        <th>Cant.</th>
+                        <th>Material</th>
+                        <th>Periodo de Tiempo</th>
+                        <th>Cap.</th>
+                        <th>Marca</th>
+                        <th>Nivel  Riesgo</th>
+                        <th>Condiciones</th>
+                        <th>Comentario</th>
+                    </tr>
+                </caption>
+            </table>
+            <button class="agregar-fila-reactivos">Agregar Fila</button>
+        </section>
+
+        <section class="equipos">
+            <table>
+                <caption><b>Equipos</b>
+                    <tr>
+                        <th>Cant.</th>
+                        <th>Equipo</th>
+                        <th>Marca</th>
+                        <th>Condiciones</th>
+                        <th>Marca</th>
+                        <th>Comentarios</th>
+                    </tr>
+                </caption>
+            </table>
+            <button class="agregar-fila-equipos">Agregar Fila</button>
+        </section>
+        
+        <section class="prestamo">
+            <input type="text" class="campo-input" placeholder="Ingresa el periodo de préstamo">
+            <input type="text" class="campo-input" placeholder="Ingrese el grupo al que se le asigna esta práctica">
+            <input type="text" class="campo-input" placeholder="Ingrese la fecha de esta práctica">
+            <button class="boton" id="guardarInformacion">Guardar información</button>
+        </section>
+
+        <section class="consentimiento">
+            <p>Firma del Docente: _____________________________________</p>
+            <p>Firma del Encargado: _____________________________________</p>
+            <button class="boton" id="generar-pdf">Generar PDF</button>
+
+        </section>
+    
+    </main>
+
+    <footer>
+        <div class="custom-footer-info">
+            <span>&copy; 2023 - Todos los derechos reservados</span>
+            <span><a href="#custom-contact">Contáctanos</a></span>
+            <span class="custom-warning">¡Importante!</span>
+        </div>
+        
+        <div class="custom-emergency-info">
+            <span>Servicio de emergencias químicas las 24 horas:</span>
+            <span>Teléfono: 555 559 1588</span>
+        </div>
+    </footer>
+    
+     
+</body>
+</html>

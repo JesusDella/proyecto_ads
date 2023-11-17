@@ -1,0 +1,49 @@
+main {
+    border: 1px solid black; 
+    padding: 1em;
+    height: auto;
+}
+
+h1 {
+    color: #333;
+    padding-bottom: 0.5em; 
+    margin-bottom: 1em; 
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+}
+
+.textarea-email::placeholder,
+.textarea-descripcion::placeholder {
+    font-size: 14px; 
+}
+
+textarea {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.textarea-email {
+    width: 80%;
+    height: 3em;
+}
+.textarea-descripcion {
+    width: 80%;
+    height: 10em;
+}
+
+.boton#archivos {
+    align-self: flex-start;
+    margin-left: 10%;
+}
