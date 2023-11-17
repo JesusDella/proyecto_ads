@@ -1,0 +1,142 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    border: 1px solid #000;
+    padding: 1em;
+}
+
+header img {
+    border: 1px solid #000; 
+    width: 8em;
+    height: 5em;
+    margin-top: 1em;
+}
+
+.menu {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+ul a{
+    display: inline-block;
+    padding: 1.5em; 
+    margin: .5em;
+    height: auto; 
+    text-decoration: none;
+    background-color: #f0f0f0;
+    color: #333; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+ul a {
+    display: inline-block;
+    padding: 1.5em;
+    margin-bottom: 0;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+ul a:hover {
+    background-color: #ddd;
+}
+
+#boton-iniciar-sesion {
+    display: inline-block;
+    padding: 1em; 
+    margin-top: 1.5em;
+    height: 2em;  
+    text-decoration: none;
+    background-color: #f0f0f0;
+    color: #333; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+}
+
+#boton-iniciar-sesion:hover {
+    background-color: #ddd;
+}
+
+.boton {
+    display: inline-block;
+    padding: 1.5em; 
+    margin-top: 1em;
+    margin-bottom: 2em;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    color: #333; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+.boton:hover {
+    background-color: #ddd;
+}
+
+main{
+    border: 1px solid #000; 
+    padding: 1em;
+    height: 30em;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0; 
+    padding: 1em;
+    border-top: 1px solid #ccc; 
+    margin-top: 1em;
+    color: #333;
+    font-size: 1em;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+    }
+    
+    .menu {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5em;    
+    }
+
+    .menu a {
+        width: 80%;
+        padding: 1em;
+    }
+    
+    header img {
+        width: 8em;
+        margin-bottom: 10px; 
+    }
+
+    header a{
+        padding: .5em;
+        margin: 5px; 
+        text-align: center;  
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #000;
+        margin-top: 1em;
+    }
+}
+

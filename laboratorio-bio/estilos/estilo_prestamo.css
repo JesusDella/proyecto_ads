@@ -1,0 +1,145 @@
+main {
+    display: flex;
+    justify-content:space-around;
+    padding: 2em;
+}
+
+main h4 {
+    border: 1px solid black;
+    margin-top: 0;
+    padding: 1em;
+    height: 1em;
+    width: 20%;
+}   
+
+caption {
+    border: 2px solid #ccc;
+    border-bottom: none;
+    padding: .5em;
+}
+
+.reactivos table,
+.equipos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+}
+
+.reactivos:nth-of-type(2) table caption {
+    margin-top: 1em;
+}
+
+.reactivos th, .reactivos td,
+.equipos th, .equipos td {
+    border: 2px solid #ccc;
+    padding: 1.5em; /* Ajusta según necesidades específicas para .reactivos y .equipos */
+    text-align: left;
+    font-size: 16px;
+    width: 6em;
+}
+
+.reactivos th,
+.equipos th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+
+.agregar-fila-reactivos, .agregar-fila-equipos {
+    margin-top: 1em;
+    cursor: pointer;
+    padding: 8px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.datos {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.datos h4 {
+    padding: 1em;
+}   
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    height: auto;
+
+}
+
+.prestamo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75%;
+    padding: 0;
+    margin-top: 2em;
+}
+
+.input-table {
+    background-color: #f0f0f0;
+    border: none;
+    width: 7em;
+    height: 2em;
+    margin: 0;
+}
+
+.campo-input {
+    padding: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    text-decoration: none;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#generar-pdf {
+    align-self: flex-start;
+    width: 30%;
+}
+
+.boton#bot {
+    align-self: start;
+}
+ 
+.consentimiento {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5em;
+}
+
+@media screen and (max-width: 767px) {
+
+    main {
+        padding: 5em;
+    }
+
+    .consentimiento {
+        display: block;
+    }
+
+    .prestamo {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    #guardarInformacion {
+        align-self: flex-start;
+        width: 50%;
+    }
+
+}
